@@ -7,6 +7,7 @@ import Header from "./Headers/Header";
 import Sidebar from "./Sidebars/Sidebar";
 import Login from "./account/Login";
 import { auth } from "./Firebase";
+import Widgets from "./Widgets/Widgets";
 
 function App() {
   const user = useSelector(selectUser);
@@ -40,7 +41,7 @@ function App() {
           <Sidebar />
           {/* Feed */}
           <Feed />
-          {/* Widgets */}
+          <Widgets />
         </div>
       )}
     </div>
